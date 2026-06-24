@@ -88,7 +88,7 @@ function egal() {
 
                 case "/":
                     if (num == 0) {
-                        document.getElementById("resultat").innerHTML = "MATH EROR";
+                        document.getElementById("resultat").innerHTML = "ERREUR";
                         expression= " ";
                         return;
                     }
@@ -99,6 +99,12 @@ function egal() {
             operateur = c;
             nombre = "";
         }
+    }
+
+    //affiche ERREUR au lieu de NAN
+    if (isNaN(resultat)){
+        document.getElementById("resultat").innerHTML="ERREUR";
+        return;
     }
 
     document.getElementById("resultat").innerHTML = resultat;
