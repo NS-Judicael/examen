@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="vrai machine calculer.css">
+</head>
+
+<body>
+
+<div class="vatany"> <!-- Corp machine -->
+
+    <!-- Ecran machine-->
+    <div class="ecran">
+        <div id="operation"></div>
+        <div id="resultat">0</div>
+    </div>
+
+    <!-- Boutons rehetra -->
+    <div class="boutton">
+
+        <button class="effacer" onclick="effacer()">AC</button>
+        <button class="orange" onclick="pourcentage()">%</button>
+        <button class="orange" onclick="supprimer()">DEL</button>
+        <button class="bleu" onclick="diviser()">/</button>
+
+        <button class="fotsy" onclick="appuyer7()">7</button>
+        <button class="fotsy"  onclick="appuyer8()">8</button>
+        <button class="fotsy"  onclick="appuyer9()">9</button>
+        <button class="bleu" onclick="multiplier()">*</button>
+
+        <button class="fotsy"  onclick="appuyer4()">4</button>
+        <button class="fotsy"  onclick="appuyer5()">5</button>
+        <button  class="fotsy" onclick="appuyer6()">6</button>
+        <button class="bleu" onclick="soustraire()">-</button>
+
+        <button  class="fotsy" onclick="appuyer1()">1</button>
+        <button class="fotsy"  onclick="appuyer2()">2</button>
+        <button class="fotsy"  onclick="appuyer3()">3</button>
+        <button class="bleu" onclick="addition()">+</button>
+
+        <button class="zero" onclick="appuyer0()">0</button>
+        <button class="fotsy"  onclick="virgule()">.</button>
+        <button class="bleuegal" onclick="egal()">=</button>
+
+    </div>
+
+    <!--soratra Historique & vider -->
+     <div class="farany">
+     <h3 class="Historique-txt">Historique</h3>
+     <button class="viderHistorique" onclick="viderHistorique ()">vider</button>
+     </div>
+
+    <!--ecran Historique -->
+    <div class="Historique_ecran">
+        <div id="liste"></div>
+    </div>
+
+</div>
+
+<script src="vrai machine calculer.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
